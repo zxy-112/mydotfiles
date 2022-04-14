@@ -205,6 +205,12 @@ cnoremap <C-e> <End>
 map <Up> gk
 map <Down> gj
 
+" auto () [] {} ""
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap " ""<Esc>i
+
 " for ycm
 imap <silent> <C-l> <Plug>(YCMToggleSignatureHelp)
 nnoremap <leader>gt :YcmCompleter GoTo<CR>
