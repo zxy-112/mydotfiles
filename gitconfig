@@ -1,0 +1,10 @@
+[user]
+	email = 775847012@qq.com
+	name = Xingyu Zhang
+[core]
+	editor = vim
+	excludesFile = /home/zxy/.gitignore_global
+[alias]
+    graph = log --all --graph --decorate --oneline
+    cm = commit
+    co = checkout

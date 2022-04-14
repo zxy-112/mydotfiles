@@ -1,0 +1,36 @@
+
+# some more ls aliases
+alias la='ls -l -G -A -c -F -h'
+alias ll='ls -l -G -c -F -h'
+
+# some useful aliases for git
+alias gs='git status'
+alias gss='git status --short'
+alias gc='git commit'
+alias gcc='git commit --all'
+alias gca='git commit --amend'
+alias gl='git log'
+alias gll='git log --oneline --all --graph --decorate'
+alias ga='git add'
+alias gaa='git add --all'
+alias gd='git diff'
+alias gds='git diff --staged'
+
+alias up='cd ..'
+
+# some aliases for tmux
+alias ta='tmux attach'
+alias td='tmux detach'
+alias th='tmux split-window'
+alias tv='tmux split-window -h'
+
+# some aliases for python
+alias py='python3'
+alias pi='python3 -i'
+alias pt='python3 -m doctest -v'
+
+# always color when grep
+alias grep='grep --color=auto'
+
+# use vim and fzf to open files
+alias vf='vim $(fzf)'
