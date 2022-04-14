@@ -17,7 +17,7 @@ for file in $files; do
     # 将配置文件移入home文件夹
     if [ -f "$HOME/.$file" ]
     then
-        cp ~/.$file ~/.$file.bak
+        cp ~/.$file "~/.$file.bak""$date"
     fi
     cp ./$file ~/.$file 2>/dev/null
-
+done
