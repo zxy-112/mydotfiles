@@ -7,12 +7,11 @@ if [ ! -d "$HOME/dotfiles" ]
     then
     mkdir ~/dotfiles
     cd ~/dotfiles || exit
-    git init
 else
     cd ~/dotfiles || exit
 fi
 
-# mv configfiles into dotfiles
+# mv configfiles into home
 for file in $files; do
     # 将配置文件移入home文件夹
     if [ -f "$HOME/.$file" ]
